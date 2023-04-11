@@ -1,0 +1,18 @@
+{
+  "useWorkspaces": true,
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "version": {
+      "allowBranch": "main"
+    }
+  },
+  "ignoreChanges": [
+    "__test__/**",
+    "**/__tests__/**",
+    "**/**.test.ts"
+  ],
+  "version": "independent",
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json"
+}
