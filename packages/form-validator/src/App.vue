@@ -19,7 +19,7 @@ import {
 // const rules = useRules(t);
 
 // Then you may not specify the message for the rule
-// const name = form.addFiled('name', '', [
+// const name = form.addField('name', '', [
 //   rules.required(),
 // ]);
 
@@ -27,21 +27,21 @@ const rules = useRules();
 
 const form = useFormValidator();
 
-const name = form.addFiled('name', '', [
+const name = form.addField('name', '', [
   rules.required('The field is required'),
 ]);
 
-const email = form.addFiled('email', '', [
+const email = form.addField('email', '', [
   rules.required('The field is required'),
   rules.email('The field should be email'),
 ]);
 
-const password = form.addFiled('password', '', [
+const password = form.addField('password', '', [
   rules.required('The field is required'),
   rules.min(6, 'The field should be min 6 characters'),
 ]);
 
-const passwordConfirmation = form.addFiled('password_confirmation', '', [
+const passwordConfirmation = form.addField('password_confirmation', '', [
   rules.required('The field is required'),
   (value) => rules.confirmed(password.value.value, 'The confirmation is incorect')(value),
 ]);

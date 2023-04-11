@@ -15,7 +15,7 @@ describe('useFormValidator', () => {
     const {
       errors,
       changed,
-      addFiled,
+      addField,
       validate,
       setErrors,
       handleSubmit,
@@ -26,7 +26,7 @@ describe('useFormValidator', () => {
     expect(errors.value).toEqual([]);
     expect(changed.value).toEqual(false);
     expect(validate).toBeInstanceOf(Function);
-    expect(addFiled).toBeInstanceOf(Function);
+    expect(addField).toBeInstanceOf(Function);
     expect(reset).toBeInstanceOf(Function);
     expect(setErrors).toBeInstanceOf(Function);
     expect(getRawFieldsValues).toBeInstanceOf(Function);
@@ -37,7 +37,7 @@ describe('useFormValidator', () => {
     const form = useFormValidator();
 
     expect(Object.keys(form.getRawFieldsValues()).length).toBe(0);
-    form.addFiled('test', 'value', []);
+    form.addField('test', 'value', []);
 
     expect(Object.keys(form.getRawFieldsValues()).length).toBe(1);
     const [
@@ -52,7 +52,7 @@ describe('useFormValidator', () => {
     const form = useFormValidator();
     const validate = vi.fn(() => true);
 
-    form.addFiled('test', 'value', [
+    form.addField('test', 'value', [
       validate,
     ]);
 
@@ -65,7 +65,7 @@ describe('useFormValidator', () => {
     const validate = vi.fn(() => true);
     const validate2 = vi.fn(() => true);
 
-    form.addFiled('test', 'value', [
+    form.addField('test', 'value', [
       validate,
       validate2,
     ]);
@@ -80,7 +80,7 @@ describe('useFormValidator', () => {
     const validate = vi.fn(() => true);
     const validate2 = vi.fn(() => 'error message');
 
-    form.addFiled('test', 'value', [
+    form.addField('test', 'value', [
       validate,
       validate2,
     ]);
@@ -93,7 +93,7 @@ describe('useFormValidator', () => {
   test('should set errors', () => {
     const form = useFormValidator();
 
-    form.addFiled('test', 'value');
+    form.addField('test', 'value');
 
     form.setErrors({
       test: [
@@ -111,7 +111,7 @@ describe('useFormValidator', () => {
     const validate = vi.fn(() => true);
     const validate2 = vi.fn(() => 'error message');
 
-    const field = form.addFiled('test', 'value', [
+    const field = form.addField('test', 'value', [
       validate,
       validate2,
     ]);
@@ -129,8 +129,8 @@ describe('useFormValidator', () => {
 
   test('should get raw fields values', () => {
     const form = useFormValidator();
-    form.addFiled('test', 'value');
-    form.addFiled('test2', 'value2');
+    form.addField('test', 'value');
+    form.addField('test2', 'value2');
     expect(form.getRawFieldsValues()).toEqual({
       test: 'value',
       test2: 'value2',
@@ -142,7 +142,7 @@ describe('useFormValidator', () => {
     const validate = vi.fn(() => true);
     const validate2 = vi.fn(() => 'error message');
 
-    form.addFiled('test', 'value', [
+    form.addField('test', 'value', [
       validate,
       validate2,
     ]);
@@ -162,7 +162,7 @@ describe('useFormValidator', () => {
     const form = useFormValidator();
     const validate = vi.fn(() => true);
 
-    form.addFiled('test', 'value', [
+    form.addField('test', 'value', [
       validate,
     ]);
 
@@ -184,7 +184,7 @@ describe('useFormValidator', () => {
   test('form should react to state change of its fields', async () => {
     const form = useFormValidator();
 
-    const field = form.addFiled('test', 'value');
+    const field = form.addField('test', 'value');
 
     expect(form.changed.value).toBe(false);
 

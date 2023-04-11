@@ -11,7 +11,7 @@ import isAxiosError from '@/form-validator/utils/is-axios-error';
  *
  * ```typescript
  * const form = useFormValidator();
- * const name = form.addFiled(
+ * const name = form.addField(
  *   'name',
  *   '',
  *   [
@@ -44,7 +44,7 @@ export default function useFormValidator() {
    * @param value default value
    * @param rules list of validation rules
    */
-  function addFiled<T>(
+  function addField<T>(
     fieldName: string,
     value: T,
     rules: TFormValidatorRule<T>[] = [],
@@ -126,7 +126,7 @@ export default function useFormValidator() {
   return {
     errors,
     changed,
-    addFiled,
+    addField,
     validate,
     setErrors,
     handleSubmit,
