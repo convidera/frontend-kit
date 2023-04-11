@@ -1,5 +1,5 @@
 {
-  "name": "@convidera-team/form-validator",
+  "name": "@convidera-team/vue-form-validator",
   "version": "0.1.0",
   "files": [
     "dist"
