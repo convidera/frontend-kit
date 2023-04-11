@@ -1,7 +1,7 @@
 import {
   isString,
   isBoolean,
-} from '@vueuse/core';
+} from '@convidera-team/utils';
 
 const requiredIf = (fields: unknown[], message: string) => <T>(value: T) => {
   if (

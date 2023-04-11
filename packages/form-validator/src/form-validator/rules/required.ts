@@ -2,7 +2,7 @@ import {
   isBoolean,
   isString,
   isObject,
-} from '@vueuse/core';
+} from '@convidera-team/utils';
 import {
   isProxy,
 } from 'vue';

@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "build:all": "yarn workspaces foreach -pt run build",
+    "build:all": "yarn workspaces foreach -vp --topological-dev run build",
     "lint:all": "yarn workspaces foreach -p run lint",
     "lint:all:fix": "yarn workspaces foreach -p run lint:fix",
     "test:all": "yarn workspaces foreach -p run test",
