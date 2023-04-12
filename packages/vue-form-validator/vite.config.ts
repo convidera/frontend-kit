@@ -5,10 +5,8 @@ import {
 } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import dts from 'vite-plugin-dts';
+import path from 'path';
 
-const path = require('path');
-
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
@@ -30,7 +28,7 @@ export default defineConfig({
         'es',
       ],
       entry: path.resolve(__dirname, 'src/lib'),
-      name: 'FormValidator',
+      name: 'VueFormValidator',
       fileName: (format) => `lib.${format}.js`,
     },
     rollupOptions: {
@@ -39,7 +37,6 @@ export default defineConfig({
       external: [
         'vue',
         'axios',
-        '@vueuse/core',
       ],
     },
   },

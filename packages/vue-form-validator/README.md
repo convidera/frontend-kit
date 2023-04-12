@@ -117,7 +117,34 @@ errors, the errors returned by api will be mapped to the fields in the form usin
 specified during `form.addField('fieldName')`. So make sure to name fields in the same way as they
 are named in the api response.
 
-Please refer to [App.vue](./src/App.vue) for real usage example
+You can run `yarn dev` to see basic usage in browser.
+
+### It's also possible to add validation rulse after the field is created:
+
+```javascript
+const newPassword = form.addFiled('newPassword', '', [
+  ...someValidationRules
+]);
+
+const passwordConfirmation = form.addFiled('passwordConfirmation', '', [
+  (value) => rules.confirmed(newPassword.value.value)(value),
+]);
+
+const currentPassword = form.addFiled('currentPassword', '', [
+  (value) => rawRules.requiredIf([
+    newPassword.value.value,
+    passwordConfirmation.value.value,
+  ], 'Required if new password and password confirmation provided')(value),
+]);
+
+newPassword.addRules([
+  (value) => rawRules.requiredIf([
+    currentPassword.value.value,
+    passwordConfirmation.value.value,
+  ], 'Required if current password and password confirmation provided')(value),
+]);
+
+```
 
 ## Translations for `vue-i18n`
 

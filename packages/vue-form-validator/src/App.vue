@@ -61,10 +61,10 @@ function submitPromise(params: any) {
         message: 'API Errors',
         errors: {
           name: [
-            'API error: Ban NAME!!!!',
+            'API error: invalid NAME!!!!',
           ],
           email: [
-            'API error: Bed EMAIL!!!!',
+            'API error: invalid EMAIL!!!!',
           ],
         },
       },
