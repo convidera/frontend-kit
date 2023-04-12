@@ -3,9 +3,6 @@
   "version": "1.2.0",
   "description": "Eslint vue3 config used in Convidera",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"no test specified\" && exit 1"
-  },
   "author": "Convidera",
   "license": "ISC",
   "files": [
