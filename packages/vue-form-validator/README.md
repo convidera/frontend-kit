@@ -147,7 +147,7 @@ newPassword.addRules([
 ```
 
 ## Available validation rules
-Please check [here]('./src/form-validator/rules')
+Please check [here](./src/form-validator/rules)
 
 ## Translations for `vue-i18n`
 
