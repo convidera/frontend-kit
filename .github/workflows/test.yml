@@ -1,17 +1,19 @@
-name: Build and Lint
-on: [push, pull_request]
+name: test and lint
+on:
+  pull_request:
+    branches: [main]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v2
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
       with:
         check-latest: true
-        node-version: '16'
+        node-version: 16
 
     - run: yarn install
+    - run: yarn run lint:all
+    - run: yarn run test:all
+    - run: yarn run build:all
