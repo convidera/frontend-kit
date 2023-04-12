@@ -13,3 +13,21 @@ The monorepo contains multiple packages. Refer to their READMEs for more details
 - [utils](./packages/utils)
 
 ---
+
+## Development
+
+- `yarn install`
+- `yarn build:all`
+- make changes
+- create a PR
+
+### Linting and testing
+- `yarn lint:all`
+- `yarn test:all`
+
+### Publishing
+- `yarn lerna:version`
+- `yarn lerna:publish`
+
+Read more about the way `lerna` handles versioning and publishing
+[here](https://lerna.js.org/docs/features/version-and-publish).
