@@ -40,7 +40,7 @@ const password = form.addField('password', '', [
 
 const passwordConfirmation = form.addField('password_confirmation', '', [
   rules.required('The field is required'),
-  (value) => rules.confirmed(password.value.value, 'The confirmation is incorect')(value),
+  (value) => rules.confirmed(password.value.value, 'The confirmation is incorrect')(value),
 ]);
 
 async function submit() {
@@ -119,7 +119,7 @@ are named in the api response.
 
 You can run `yarn dev` to see basic usage in browser.
 
-### It's also possible to add validation rulse after the field is created:
+### It's also possible to add validation rules after the field is created:
 
 ```javascript
 const newPassword = form.addFiled('newPassword', '', [
@@ -150,7 +150,7 @@ newPassword.addRules([
 
 #### Important
 When adding new translations, make sure to also adjust `src/form-validator/translation/schema.ts`
-file as it porvides `typescript` support.
+file as it provides `typescript` support.
 
 The package provides `en` and `de` translations which could be used to extend `vue-i18n`
 translations:

@@ -1,0 +1,24 @@
+{
+  "name": "@convidera-team/eslint-config-vue3-convidera",
+  "version": "1.2.0",
+  "description": "Eslint vue3 config used in Convidera",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no test specified\" && exit 1"
+  },
+  "author": "Convidera",
+  "license": "ISC",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@convidera-team/eslint-config-ts-convidera": "^1.1.1",
+    "eslint-plugin-vue": ">=8"
+  },
+  "peerDependencies": {
+    "eslint": ">=8"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
