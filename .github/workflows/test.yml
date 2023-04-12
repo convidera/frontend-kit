@@ -10,7 +10,7 @@ jobs:
       with:
         check-latest: true
         node-version: 16
-    - run: npm i
+    - run: yarn install
     - run: yarn run lint:all
     - run: yarn run test:all
     - run: yarn run build:all
