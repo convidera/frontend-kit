@@ -1,6 +1,6 @@
 {
   "name": "@convidera-team/vue-form-validator",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "files": [
     "dist"
   ],
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@convidera-team/eslint-config-vue3-convidera": "^1.2.0",
-    "@convidera-team/utils": "*",
+    "@convidera-team/utils": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
     "@vitejs/plugin-vue": "^4.1.0",
