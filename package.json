@@ -10,7 +10,8 @@
     "lerna:version": "lerna version --no-commit-hooks --no-changelog",
     "lerna:publish": "lerna publish from-package",
     "preversion": "yarn run lint:all && yarn run test:all && yarn run build:all",
-    "prepublish": "yarn run lint:all && yarn run test:all && yarn run build:all"
+    "prepublish": "yarn run lint:all && yarn run test:all && yarn run build:all",
+    "version": "yarn install && git stage yarn.lock"
   },
   "workspaces": [
     "packages/*"
