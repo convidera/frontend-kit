@@ -76,5 +76,11 @@ module.exports = {
     ],
     'arrow-body-style': 0,
     'prefer-destructuring': 0,
+
+    'no-restricted-syntax': [
+      'off',
+      'ForOfStatement',
+      'ForInStatement',
+    ],
   },
 };
