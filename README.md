@@ -1,5 +1,16 @@
 # Frontend related packages used in Convidera
 
+# TOC
+
+- [Frontend related packages used in Convidera](#frontend-related-packages-used-in-convidera)
+- [TOC](#toc)
+  - [Packages](#packages)
+  - [Development](#development)
+    - [Linting and testing](#linting-and-testing)
+    - [Publishing](#publishing)
+  - [TODO](#todo)
+
+
 ## Packages
 
 The monorepo contains multiple packages. Refer to their READMEs for more details:
