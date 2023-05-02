@@ -31,3 +31,9 @@ The monorepo contains multiple packages. Refer to their READMEs for more details
 
 Read more about the way `lerna` handles versioning and publishing
 [here](https://lerna.js.org/docs/features/version-and-publish).
+
+## TODO
+
+- [ ] auto versioning and publishing via Github Actions
+- [ ] add package for vue components
+- [ ] update stylelint to v15
