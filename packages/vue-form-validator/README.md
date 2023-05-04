@@ -5,6 +5,7 @@
 ```sh
 yarn add @convidera-team/vue-form-validator
 ```
+
 or
 
 ```sh
@@ -119,7 +120,7 @@ are named in the api response.
 
 You can run `yarn dev` to see basic usage in browser.
 
-### It's also possible to add validation rules after the field is created:
+### It's also possible to add validation rules after the field is created
 
 ```javascript
 const newPassword = form.addFiled('newPassword', '', [
@@ -146,17 +147,44 @@ newPassword.addRules([
 
 ```
 
+### Example of custom requiredIf rule
+
+You can also create your own rules if predefined do not fit you. here is a TS example of a custom requiredIf rule:
+
+```typescript
+import {
+  LocationTypeEnum,
+} from 'project-specific';
+import {
+  useFormValidator,
+  TFormValidatorRule,
+} from '@convidera-team/vue-form-validator';
+
+const requiredIf: (type: LocationTypeEnum) => TFormValidatorRule<undefined> = (type) => () => locationType.value.value === type;
+const form = useFormValidator();
+const address = form.addField(
+  'address',
+  undefined,
+  [
+    requiredIf(LocationTypeEnum.PHYSICAL),
+  ],
+);
+```
+
 ## Available validation rules
+
 Please check [here](./src/form-validator/rules)
 
 ## Translations for `vue-i18n`
 
 #### Important
+
 When adding new translations, make sure to also adjust `src/form-validator/translation/schema.ts`
 file as it provides `typescript` support.
 
 The package provides `en` and `de` translations which could be used to extend `vue-i18n`
 translations:
+
 ```javascript
 // English translation file
 import {
@@ -210,4 +238,5 @@ export default {
 }
 
 ```
+
 In the same way you can add translations for other languages as well.

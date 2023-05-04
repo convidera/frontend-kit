@@ -1,6 +1,6 @@
 # Frontend related packages used in Convidera
 
-# TOC
+## TOC
 
 - [Frontend related packages used in Convidera](#frontend-related-packages-used-in-convidera)
 - [TOC](#toc)
@@ -9,7 +9,6 @@
     - [Linting and testing](#linting-and-testing)
     - [Publishing](#publishing)
   - [TODO](#todo)
-
 
 ## Packages
 
@@ -33,10 +32,12 @@ The monorepo contains multiple packages. Refer to their READMEs for more details
 - create a PR
 
 ### Linting and testing
+
 - `yarn lint:all`
 - `yarn test:all`
 
 ### Publishing
+
 - `yarn lerna:version`
 - `yarn lerna:publish`
 
@@ -51,6 +52,7 @@ Read more about the way `lerna` handles versioning and publishing
 - [ ] update stylelint to v15
 - [ ] vue-form-validator: consider about `form.removeField` function
 - [ ] vue-form-validator: change `form.addField('name', 'defaultValue', [...rules])` to:
+
 ```javascript
 form.addField({
   name: 'name',

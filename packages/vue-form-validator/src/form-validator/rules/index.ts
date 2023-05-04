@@ -1,5 +1,6 @@
 import confirmed from '@/form-validator/rules/confirmed';
 import email from '@/form-validator/rules/email';
+import url from '@/form-validator/rules/url';
 import max from '@/form-validator/rules/max';
 import min from '@/form-validator/rules/min';
 import required from '@/form-validator/rules/required';
@@ -14,6 +15,7 @@ const validator = {
   confirmed,
   hexCode,
   requiredIf,
+  url,
 };
 
 export default validator;

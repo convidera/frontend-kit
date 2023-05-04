@@ -31,6 +31,7 @@ export default {
       includesUpperCase: 'This field must contain at least one uppercase letter',
       includesLowerCase: 'The password must contain at least one lowercase letter',
       hexCode: 'Insert a valid hex code',
+      url: 'This field must be a valid URL',
     },
   },
 };
