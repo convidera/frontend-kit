@@ -5,12 +5,14 @@
 ```bash
 yarn add @convidera-team/utils
 ```
+
 or
+
 ```bash
 npm install @convidera-team/utils --save
 ```
 
-## Usage example:
+## Usage example
 
 ```javascript
 import { 
@@ -22,7 +24,7 @@ if (isString('test')) {
 }
 ```
 
-## List of functions:
+## List of functions
 
 ```
 isBoolean

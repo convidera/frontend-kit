@@ -10,7 +10,6 @@
     - [Publishing](#publishing)
   - [TODO](#todo)
 
-
 ## Packages
 
 The monorepo contains multiple packages. Refer to their READMEs for more details:
@@ -33,10 +32,12 @@ The monorepo contains multiple packages. Refer to their READMEs for more details
 - create a PR
 
 ### Linting and testing
+
 - `yarn lint:all`
 - `yarn test:all`
 
 ### Publishing
+
 - `yarn lerna:version`
 - `yarn lerna:publish`
 
