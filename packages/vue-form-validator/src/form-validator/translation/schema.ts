@@ -31,6 +31,7 @@ export interface IFormValidatorTranslationSchema {
       includesUpperCase: string,
       includesLowerCase: string,
       hexCode: string,
+      url: string,
     },
   },
 }

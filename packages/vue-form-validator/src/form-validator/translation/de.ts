@@ -31,6 +31,7 @@ export default {
       includesUpperCase: 'Dieses Feld muss mindestens einen Großbuchstaben enthalten',
       includesLowerCase: 'Das Passwort muss mindestens einen Kleinbuchstaben enthalten',
       hexCode: 'Gib einen validen Hex Farbcode an',
+      url: 'Dieses Feld muss eine gültige URL sein',
     },
   },
 };

@@ -1,4 +1,5 @@
 import _email from './email';
+import _url from './url';
 import _min from './min';
 import _required from './required';
 import _max from './max';
@@ -113,6 +114,15 @@ export default function useRules(
     return _hexCode(displayMessage(text));
   }
 
+  function url(message?: string) {
+    let text = message;
+    if (!text && translation) {
+      text = String(translation('formValidation.messages.url'));
+    }
+
+    return _url(displayMessage(text));
+  }
+
   return {
     min,
     required,
@@ -124,5 +134,6 @@ export default function useRules(
     includesUpperCase,
     includesLowerCase,
     hexCode,
+    url,
   };
 }

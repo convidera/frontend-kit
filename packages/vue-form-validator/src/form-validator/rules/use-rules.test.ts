@@ -186,4 +186,22 @@ describe('useRules', () => {
     const validate = rules.email();
     expect(validate('fake@mail.com')).toBe(true);
   });
+
+  test('url should return proper translation key', () => {
+    const rules = useRules((key) => key);
+    const validate = rules.url();
+    expect(validate('value')).toBe('formValidation.messages.url');
+  });
+
+  test('url should return custom message if provided', () => {
+    const rules = useRules((key) => key);
+    const validate = rules.url('custom message');
+    expect(validate('value')).toBe('custom message');
+  });
+
+  test('url should not return error if the value is valid', () => {
+    const rules = useRules((key) => key);
+    const validate = rules.url();
+    expect(validate('http://example.com')).toBe(true);
+  });
 });
