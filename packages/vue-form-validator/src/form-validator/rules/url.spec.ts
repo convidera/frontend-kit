@@ -6,7 +6,7 @@ import {
 
 import url from './url';
 
-describe('email', () => {
+describe('url', () => {
   test('should return true if value is url', () => {
     const validate = url('error message');
 
