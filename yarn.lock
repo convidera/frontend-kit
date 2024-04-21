@@ -66,7 +66,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@convidera-team/eslint-config-convidera@^1.5.0, @convidera-team/eslint-config-convidera@workspace:packages/eslint-config-convidera":
+"@convidera-team/eslint-config-convidera@^1.5.1, @convidera-team/eslint-config-convidera@workspace:packages/eslint-config-convidera":
   version: 0.0.0-use.local
   resolution: "@convidera-team/eslint-config-convidera@workspace:packages/eslint-config-convidera"
   dependencies:
@@ -77,11 +77,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@convidera-team/eslint-config-ts-convidera@^1.1.2, @convidera-team/eslint-config-ts-convidera@workspace:packages/eslint-config-ts-convidera":
+"@convidera-team/eslint-config-ts-convidera@^1.1.3, @convidera-team/eslint-config-ts-convidera@workspace:packages/eslint-config-ts-convidera":
   version: 0.0.0-use.local
   resolution: "@convidera-team/eslint-config-ts-convidera@workspace:packages/eslint-config-ts-convidera"
   dependencies:
-    "@convidera-team/eslint-config-convidera": ^1.5.0
+    "@convidera-team/eslint-config-convidera": ^1.5.1
     "@typescript-eslint/eslint-plugin": ^7.7.0
     "@typescript-eslint/parser": ^7.7.0
     typescript: ^5.4.5
@@ -90,11 +90,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@convidera-team/eslint-config-vue3-convidera@^1.2.1, @convidera-team/eslint-config-vue3-convidera@workspace:packages/eslint-config-vue3-convidera":
+"@convidera-team/eslint-config-vue3-convidera@^2.0.0, @convidera-team/eslint-config-vue3-convidera@workspace:packages/eslint-config-vue3-convidera":
   version: 0.0.0-use.local
   resolution: "@convidera-team/eslint-config-vue3-convidera@workspace:packages/eslint-config-vue3-convidera"
   dependencies:
-    "@convidera-team/eslint-config-ts-convidera": ^1.1.2
+    "@convidera-team/eslint-config-ts-convidera": ^1.1.3
     eslint-plugin-vue: ^9.25.0
   peerDependencies:
     eslint: ">=8"
@@ -122,11 +122,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@convidera-team/utils@^1.0.1, @convidera-team/utils@workspace:packages/utils":
+"@convidera-team/utils@^1.0.2, @convidera-team/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@convidera-team/utils@workspace:packages/utils"
   dependencies:
-    "@convidera-team/eslint-config-ts-convidera": ^1.1.2
+    "@convidera-team/eslint-config-ts-convidera": ^1.1.3
     "@typescript-eslint/eslint-plugin": ^7.7.0
     "@typescript-eslint/parser": ^7.7.0
     eslint: ^8.57.0
@@ -142,8 +142,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@convidera-team/vue-form-validator@workspace:packages/vue-form-validator"
   dependencies:
-    "@convidera-team/eslint-config-vue3-convidera": ^1.2.1
-    "@convidera-team/utils": ^1.0.1
+    "@convidera-team/eslint-config-vue3-convidera": ^2.0.0
+    "@convidera-team/utils": ^1.0.2
     "@typescript-eslint/eslint-plugin": ^7.7.0
     "@typescript-eslint/parser": ^7.7.0
     "@vitejs/plugin-vue": ^5.0.4
