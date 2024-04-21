@@ -9,8 +9,8 @@
     "typecheck:all": "yarn workspaces foreach -vp run typecheck",
     "lerna:version": "lerna version --no-commit-hooks --no-changelog",
     "lerna:publish": "lerna publish from-package",
-    "preversion": "yarn run build:all && yarn run lint:all && yarn run test:all",
-    "prepublish": "yarn run build:all && yarn run lint:all && yarn run test:all",
+    "preversion": "yarn run build:all && yarn run lint:all && yarn run test:all && yarn run typecheck:all",
+    "prepublish": "yarn run build:all && yarn run lint:all && yarn run test:all && yarn run typecheck:all",
     "version": "yarn install && git stage yarn.lock"
   },
   "workspaces": [

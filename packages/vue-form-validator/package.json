@@ -19,7 +19,7 @@
   "typings": "./dist/lib.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit",
     "typewatch": "vue-tsc --noEmit --watch",
