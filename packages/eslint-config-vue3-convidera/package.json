@@ -10,7 +10,7 @@
   ],
   "dependencies": {
     "@convidera-team/eslint-config-ts-convidera": "^1.1.2",
-    "eslint-plugin-vue": ">=8"
+    "eslint-plugin-vue": "^9.25.0"
   },
   "peerDependencies": {
     "eslint": ">=8"

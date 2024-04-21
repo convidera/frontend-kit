@@ -240,3 +240,9 @@ export default {
 ```
 
 In the same way you can add translations for other languages as well.
+
+## Changelog
+
+### 1.1.3
+
+- update dependencies

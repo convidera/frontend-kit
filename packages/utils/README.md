@@ -33,3 +33,9 @@ isNumber
 isString
 isObject
 ```
+
+## Changelog
+
+### 1.0.2
+
+- update dependencies

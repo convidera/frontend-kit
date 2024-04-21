@@ -9,8 +9,8 @@
     "typecheck:all": "yarn workspaces foreach -vp run typecheck",
     "lerna:version": "lerna version --no-commit-hooks --no-changelog",
     "lerna:publish": "lerna publish from-package",
-    "preversion": "yarn run lint:all && yarn run test:all && yarn run build:all",
-    "prepublish": "yarn run lint:all && yarn run test:all && yarn run build:all",
+    "preversion": "yarn run build:all && yarn run lint:all && yarn run test:all",
+    "prepublish": "yarn run build:all && yarn run lint:all && yarn run test:all",
     "version": "yarn install && git stage yarn.lock"
   },
   "workspaces": [
@@ -18,6 +18,6 @@
   ],
   "packageManager": "yarn@3.5.0",
   "devDependencies": {
-    "lerna": "^6.6.1"
+    "lerna": "^6.6.2"
   }
 }
