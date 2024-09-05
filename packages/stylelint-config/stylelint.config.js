@@ -57,5 +57,6 @@ module.exports = {
     'rule-empty-line-before': null,
     'declaration-block-no-redundant-longhand-properties': null,
     'color-function-notation': 'legacy',
+    'declaration-property-value-no-unknown': true,
   },
 };
