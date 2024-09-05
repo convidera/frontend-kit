@@ -1,6 +1,6 @@
 {
   "name": "@convidera-team/stylelint-config-vue-convidera",
-  "version": "3.2.1",
+  "version": "4.0.0",
   "description": "Stylelint config vue used in Convidera",
   "main": "index.js",
   "files": [
@@ -8,13 +8,13 @@
     "stylelint.config.js"
   ],
   "dependencies": {
-    "@convidera-team/stylelint-config-convidera": "^2.3.0",
+    "@convidera-team/stylelint-config-convidera": "^3.0.0",
     "postcss-html": ">=1",
     "stylelint-config-html": ">=1",
     "stylelint-config-standard-scss": ">=3"
   },
   "peerDependencies": {
-    "stylelint": "^14.0.0"
+    "stylelint": ">=16"
   },
   "author": "Convidera",
   "license": "ISC",
