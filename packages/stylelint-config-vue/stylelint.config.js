@@ -6,7 +6,7 @@ module.exports = {
   ],
   rules: {
     'scss/dollar-variable-empty-line-before': null,
-    'scss/load-partial-extension': 'always',
+    'scss/load-partial-extension': null,
     'selector-pseudo-class-no-unknown': [
       true,
       {
@@ -26,5 +26,6 @@ module.exports = {
         ],
       },
     ],
+    'declaration-property-value-no-unknown': null,
   },
 };
