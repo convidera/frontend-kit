@@ -30,8 +30,12 @@ module.exports = {
 
 - **Breaking**: remove stylelint-config-recommended-vue
 
-### 2.0.0
+### 3.2.0
 
 - **Breaking**: supports `stylelint` v14.0.0 and above
+
+### 3.2.1
+
+- Fix stylelint peer dependency version. Don't allow 15 version and above
 
 ---
