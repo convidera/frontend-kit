@@ -118,7 +118,7 @@ __metadata:
     stylelint-config-html: ">=1"
     stylelint-config-standard-scss: ">=3"
   peerDependencies:
-    stylelint: ">=14"
+    stylelint: ^14.0.0
   languageName: unknown
   linkType: soft
 
