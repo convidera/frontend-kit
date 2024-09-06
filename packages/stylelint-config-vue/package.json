@@ -1,6 +1,6 @@
 {
   "name": "@convidera-team/stylelint-config-vue-convidera",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Stylelint config vue used in Convidera",
   "main": "index.js",
   "files": [
