@@ -101,11 +101,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@convidera-team/stylelint-config-convidera@^3.0.0, @convidera-team/stylelint-config-convidera@workspace:packages/stylelint-config":
+"@convidera-team/stylelint-config-convidera@^2.3.0, @convidera-team/stylelint-config-convidera@workspace:packages/stylelint-config":
   version: 0.0.0-use.local
   resolution: "@convidera-team/stylelint-config-convidera@workspace:packages/stylelint-config"
   peerDependencies:
-    stylelint: ">=16"
+    stylelint: ">=14"
   languageName: unknown
   linkType: soft
 
@@ -113,12 +113,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@convidera-team/stylelint-config-vue-convidera@workspace:packages/stylelint-config-vue"
   dependencies:
-    "@convidera-team/stylelint-config-convidera": ^3.0.0
+    "@convidera-team/stylelint-config-convidera": ^2.3.0
     postcss-html: ">=1"
     stylelint-config-html: ">=1"
     stylelint-config-standard-scss: ">=3"
   peerDependencies:
-    stylelint: ">=16"
+    stylelint: ^14.0.0
   languageName: unknown
   linkType: soft
 
