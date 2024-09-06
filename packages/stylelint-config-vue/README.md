@@ -26,15 +26,13 @@ module.exports = {
 
 ## Changelog
 
-### 3.2.1
-
-- Fix stylelint peer dependency version. Don't allow 15 version and above
-
 ### 4.0.0
 
 - **Breaking**: supports `stylelint` v16.0.0 and above
 
----
+### 3.2.1
+
+- Fix stylelint peer dependency version. Don't allow 15 version and above
 
 ### 3.0.0
 
