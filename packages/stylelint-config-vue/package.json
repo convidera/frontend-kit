@@ -9,12 +9,12 @@
   ],
   "dependencies": {
     "@convidera-team/stylelint-config-convidera": "^2.3.0",
-    "postcss-html": ">=1",
-    "stylelint-config-html": ">=1",
-    "stylelint-config-standard-scss": ">=3"
+    "postcss-html": "^1.7.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-standard-scss": "^13.1.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.0.0"
+    "stylelint": ">=16"
   },
   "author": "Convidera",
   "license": "ISC",

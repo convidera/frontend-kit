@@ -49,7 +49,8 @@ Read more about the way `lerna` handles versioning and publishing
 - [ ] auto versioning and publishing via Github Actions
 - [ ] `lerna` allows to generate changelog based on commit history
 - [ ] add package for vue components
-- [ ] update stylelint to v15
+- [x] upgrade stylelint to v16
+- [ ] upgrade eslint to v9. Required v9 implementation for airbnb package https://github.com/airbnb/javascript/issues/2961
 - [ ] vue-form-validator: consider about `form.removeField` function
 - [ ] vue-form-validator: change `form.addField('name', 'defaultValue', [...rules])` to:
 

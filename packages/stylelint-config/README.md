@@ -24,6 +24,11 @@ module.exports = {
 
 ## Changelog
 
+### 3.0.0
+
+- **Breaking**: supports `stylelint` v16.0.0 and above
+- remove deprecated in v15 rules. See https://stylelint.io/migration-guide/to-15/#deprecated-stylistic-rules
+
 ### 2.1.0
 
 - add `'string-quotes': 'single'` rule
