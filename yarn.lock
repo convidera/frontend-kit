@@ -105,7 +105,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@convidera-team/stylelint-config-convidera@workspace:packages/stylelint-config"
   peerDependencies:
-    stylelint: ">=14"
+    stylelint: ">=16"
   languageName: unknown
   linkType: soft
 
@@ -118,7 +118,7 @@ __metadata:
     stylelint-config-html: ">=1"
     stylelint-config-standard-scss: ">=3"
   peerDependencies:
-    stylelint: ^14.0.0
+    stylelint: ">=16"
   languageName: unknown
   linkType: soft
 

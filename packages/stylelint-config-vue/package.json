@@ -8,7 +8,7 @@
     "stylelint.config.js"
   ],
   "dependencies": {
-    "@convidera-team/stylelint-config-convidera": "^3.0.0",
+    "@convidera-team/stylelint-config-convidera": "^2.3.0",
     "postcss-html": ">=1",
     "stylelint-config-html": ">=1",
     "stylelint-config-standard-scss": ">=3"
