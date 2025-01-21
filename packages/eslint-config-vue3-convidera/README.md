@@ -24,6 +24,10 @@ module.exports = {
 
 ## Changelog
 
+### 2.1.0
+
+- update `eslint-plugin-vue` to `9.32.0`
+
 ### 2.0.0
 
 - update `eslint-plugin-vue` to `9.25.0`
