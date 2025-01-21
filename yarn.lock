@@ -90,7 +90,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@convidera-team/eslint-config-vue3-convidera@^2.0.0, @convidera-team/eslint-config-vue3-convidera@workspace:packages/eslint-config-vue3-convidera":
+"@convidera-team/eslint-config-vue3-convidera@^2.0.1, @convidera-team/eslint-config-vue3-convidera@workspace:packages/eslint-config-vue3-convidera":
   version: 0.0.0-use.local
   resolution: "@convidera-team/eslint-config-vue3-convidera@workspace:packages/eslint-config-vue3-convidera"
   dependencies:
@@ -142,7 +142,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@convidera-team/vue-form-validator@workspace:packages/vue-form-validator"
   dependencies:
-    "@convidera-team/eslint-config-vue3-convidera": ^2.0.0
+    "@convidera-team/eslint-config-vue3-convidera": ^2.0.1
     "@convidera-team/utils": ^1.0.3
     "@typescript-eslint/eslint-plugin": ^7.7.0
     "@typescript-eslint/parser": ^7.7.0

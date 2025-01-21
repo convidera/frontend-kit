@@ -1,6 +1,6 @@
 {
   "name": "@convidera-team/eslint-config-vue3-convidera",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Eslint vue3 config used in Convidera",
   "main": "index.js",
   "author": "Convidera",
