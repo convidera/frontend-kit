@@ -10,9 +10,9 @@
   ],
   "dependencies": {
     "@convidera-team/eslint-config-convidera": "^1.5.1",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "typescript": "^5.4.5"
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "eslint": ">=8"
