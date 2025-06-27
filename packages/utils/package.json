@@ -1,6 +1,7 @@
 {
   "name": "@convidera-team/utils",
   "version": "1.0.3",
+  "type": "module",
   "files": [
     "dist"
   ],
@@ -20,7 +21,7 @@
     "typewatch": "vue-tsc --noEmit --watch",
     "lint": "yarn lint:js",
     "lint:fix": "yarn lint:js:fix",
-    "lint:js": "eslint --ext .js,.vue,.ts --ignore-path .gitignore .",
+    "lint:js": "eslint --ext .js,.vue,.ts .",
     "lint:js:fix": "yarn lint:js --fix",
     "test": "vitest run",
     "test:watch": "vitest"

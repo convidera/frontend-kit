@@ -25,30 +25,12 @@ export default function useFormValidatorField<T>(
     return errors.value.length === 0;
   });
 
-  const value = computed({
-    get() {
-      return $value.value;
-    },
-    set(val: UnwrapRef<T>) {
-      $value.value = val;
-
-      if (checked.value) {
-        // eslint-disable-next-line no-use-before-define
-        validate();
-      }
-    },
-  });
-
-  const changed = computed(() => {
-    return $originalValue.value !== value.value;
-  });
-
   function validate() {
     errors.value = [];
     checked.value = false;
 
     $rules.value.forEach((rule) => {
-      const error = rule(value.value);
+      const error = rule($value.value);
 
       if (typeof error === 'string') {
         errors.value.push(error);
@@ -59,6 +41,23 @@ export default function useFormValidatorField<T>(
 
     return valid.value;
   }
+
+  const value = computed({
+    get() {
+      return $value.value;
+    },
+    set(val: UnwrapRef<T>) {
+      $value.value = val;
+
+      if (checked.value) {
+        validate();
+      }
+    },
+  });
+
+  const changed = computed(() => {
+    return $originalValue.value !== value.value;
+  });
 
   function addRules(_rules: TFormValidatorRule<T>[]) {
     $rules.value.push(..._rules);

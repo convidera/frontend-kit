@@ -2,20 +2,24 @@
   "name": "@convidera-team/eslint-config-convidera",
   "version": "1.5.1",
   "description": "Eslint config used in Convidera",
+  "type": "module",
   "main": "index.js",
   "author": "Convidera",
   "license": "ISC",
   "files": [
     "index.js"
   ],
-  "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.32.0"
-  },
   "peerDependencies": {
-    "eslint": ">=8"
+    "eslint": ">=9"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.3.1",
+    "@eslint/js": "^9.29.0",
+    "eslint": "^9.29.0",
+    "eslint-config-airbnb-extended": "^2.1.0",
+    "eslint-plugin-import": "^2.32.0"
   }
 }
