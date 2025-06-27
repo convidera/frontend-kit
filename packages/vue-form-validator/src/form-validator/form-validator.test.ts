@@ -4,11 +4,13 @@ import {
   describe,
   vi,
 } from 'vitest';
-
-import isFormValidatorError from '@/form-validator/utils/is-form-validator-error';
-import isAxiosError from '@/form-validator/utils/is-axios-error';
+import {
+  AxiosError,
+} from 'axios';
 
 import useFormValidator from './form-validator';
+import isFormValidatorError from '@/form-validator/utils/is-form-validator-error';
+import isAxiosError from '@/form-validator/utils/is-axios-error';
 
 describe('useFormValidator', () => {
   test('should return proper values', () => {
@@ -166,10 +168,7 @@ describe('useFormValidator', () => {
       validate,
     ]);
 
-    // eslint-disable-next-line prefer-promise-reject-errors
-    const submit = vi.fn(() => Promise.reject({
-      isAxiosError: true,
-    }));
+    const submit = vi.fn(() => Promise.reject(new AxiosError('error')));
 
     try {
       await form.handleSubmit(submit);
