@@ -1,6 +1,6 @@
 {
   "name": "@convidera-team/eslint-config-vue3-convidera",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Eslint vue3 config used in Convidera",
   "type": "module",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@convidera-team/eslint-config-ts-convidera": "^1.1.3",
+    "@convidera-team/eslint-config-ts-convidera": "^2.0.0",
     "eslint-plugin-vue": "^10.2.0",
     "vue-eslint-parser": "^10.1.4"
   },

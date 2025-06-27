@@ -1,6 +1,6 @@
 {
   "name": "@convidera-team/utils",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "type": "module",
   "files": [
     "dist"
@@ -27,7 +27,7 @@
     "test:watch": "vitest"
   },
   "devDependencies": {
-    "@convidera-team/eslint-config-ts-convidera": "^1.1.3",
+    "@convidera-team/eslint-config-ts-convidera": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^8.35.0",
     "@typescript-eslint/parser": "^8.35.0",
     "eslint": "^9.29.0",
