@@ -19,7 +19,7 @@
   ],
   "packageManager": "yarn@3.5.0",
   "devDependencies": {
-    "@types/node": "^24.0.4",
+    "@types/node": "^22.0.0",
     "lerna": "^8.2.2"
   }
 }
