@@ -11,7 +11,7 @@ import _includesLowerCase from './includes-lower-case';
 import _hexCode from './hex-code';
 
 export default function useRules(
-  translation?: (key: string, params?: Record<string, any>) => string,
+  translation?: (key: string, params?: Record<string, unknown>) => string,
 ) {
   function displayMessage(message?: string) {
     if (!message) {

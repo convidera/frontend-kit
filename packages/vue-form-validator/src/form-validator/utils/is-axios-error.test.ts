@@ -3,10 +3,13 @@ import {
   test,
   describe,
 } from 'vitest';
+import {
+  AxiosResponse,
+} from 'axios';
 
 import isAxiosError from './is-axios-error';
 
-const response = {
+const response: AxiosResponse = {
   data: {
     message: 'API Errors',
     errors: {
@@ -18,6 +21,10 @@ const response = {
       ],
     },
   },
+  status: 400,
+  statusText: 'Bad Request',
+  headers: {},
+  config: {} as unknown as AxiosResponse['config'],
 };
 
 function axiosErrorPromise() {
@@ -29,10 +36,9 @@ function axiosErrorPromise() {
 }
 
 function errorPromise() {
-  // eslint-disable-next-line prefer-promise-reject-errors
-  return Promise.reject({
-    response,
-  });
+  const error = new Error();
+  (error as unknown as { response: AxiosResponse }).response = response;
+  return Promise.reject(error);
 }
 
 describe('isAxiosError', () => {
@@ -46,7 +52,7 @@ describe('isAxiosError', () => {
     try {
       await errorPromise();
     } catch (error) {
-      expect(isAxiosError(error)).toBe(undefined);
+      expect(isAxiosError(error)).toBe(false);
     }
   });
 });
