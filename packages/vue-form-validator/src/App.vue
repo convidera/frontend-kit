@@ -53,7 +53,7 @@ function submitPromise(params: any) {
   /**
    * it's example of error from Laravel
    */
-  // eslint-disable-next-line prefer-promise-reject-errors
+   
   return Promise.reject({
     isAxiosError: true,
     response: {
