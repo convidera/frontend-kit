@@ -1,6 +1,7 @@
 import js from '@eslint/js';
 import importPlugin from 'eslint-plugin-import';
 import { configs } from 'eslint-config-airbnb-extended/legacy';
+import globals from 'globals';
 
 export default [
   // Base recommended rules
@@ -20,7 +21,7 @@ export default [
       'import/no-extraneous-dependencies': 'off',
     },
   },
-  
+
   // Custom rules
   {
     rules: {
@@ -37,12 +38,12 @@ export default [
         'all',
       ],
       'linebreak-style': [
-        2,
+        'error',
         'unix',
       ],
-      'arrow-body-style': 0,
-      'prefer-destructuring': 0,
-      
+      'arrow-body-style': 'off',
+      'prefer-destructuring': 'off',
+
       // Array and object formatting
       'array-element-newline': [
         'error',
@@ -56,7 +57,7 @@ export default [
         },
       ],
       'object-property-newline': [
-        2,
+        'error',
         {
           allowAllPropertiesOnSameLine: false,
         },
@@ -82,7 +83,7 @@ export default [
           },
         },
       ],
-      
+
       // Console and logging
       'no-console': [
         'warn',
@@ -93,7 +94,7 @@ export default [
           ],
         },
       ],
-      
+
       // Syntax restrictions
       'no-restricted-syntax': [
         'off',
@@ -102,27 +103,17 @@ export default [
       ],
     },
   },
-  
-  // Global configuration
+
+  // Environment configuration
   {
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
-        // Browser globals
-        window: 'readonly',
-        document: 'readonly',
-        console: 'readonly',
-        // Node.js globals
-        process: 'readonly',
-        Buffer: 'readonly',
-        __dirname: 'readonly',
-        __filename: 'readonly',
-        global: 'readonly',
-        module: 'readonly',
-        require: 'readonly',
-        exports: 'readonly',
+        ...globals.es2022,
+        ...globals.browser,
+        ...globals.node,
       },
     },
   },
-]; 
+];

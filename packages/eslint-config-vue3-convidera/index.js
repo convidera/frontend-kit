@@ -6,7 +6,7 @@ import tsParser from '@typescript-eslint/parser';
 export default [
   // TypeScript configuration
   ...tsConfig,
-  
+
   // Vue configuration
   {
     files: ['**/*.vue'],
@@ -30,7 +30,7 @@ export default [
     },
     rules: {
       // Vue-specific custom rules
-      'vue/multi-word-component-names': 0,
+      'vue/multi-word-component-names': 'off',
       'vue/component-name-in-template-casing': [
         'error',
         'kebab-case',
@@ -39,9 +39,9 @@ export default [
           ignores: [],
         },
       ],
-      
-      // Include Vue 3 recommended rules from flat config
-      ...vuePlugin.configs['flat/recommended'].rules,
+
+      // Include Vue 3 recommended rules
+      ...vuePlugin.configs.recommended.rules,
     },
   },
-]; 
+];

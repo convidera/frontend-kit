@@ -1,5 +1,3 @@
-/* global URL */
-
 const isUrlValid = (value: string) => {
   let url;
   try {
