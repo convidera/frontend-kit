@@ -10,8 +10,10 @@ export default [
       '**/*.vue',
       '**/*.ts',
       '**/*.tsx',
+      '**/*.mts',
       '**/*.js',
       '**/*.jsx',
+      '**/*.mjs',
     ],
     languageOptions: {
       ecmaVersion: 'latest',

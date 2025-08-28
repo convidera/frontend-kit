@@ -9,8 +9,10 @@ export default [
     files: [
       '**/*.ts',
       '**/*.tsx',
+      '**/*.mts',
       '**/*.js',
       '**/*.jsx',
+      '**/*.mjs',
     ],
     languageOptions: {
       ecmaVersion: 'latest',
