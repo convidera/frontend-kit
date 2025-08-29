@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // Source: https://github.com/vueuse/vueuse/blob/main/packages/shared/utils/is.ts
 
 const toString = Object.prototype.toString;
