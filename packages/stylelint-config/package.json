@@ -12,6 +12,15 @@
   },
   "author": "Convidera",
   "license": "ISC",
+  "homepage": "https://github.com/convidera/frontend-kit/tree/main/packages/stylelint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/convidera/frontend-kit.git",
+    "directory": "packages/stylelint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/convidera/frontend-kit/issues"
+  },
   "publishConfig": {
     "access": "public"
   }
