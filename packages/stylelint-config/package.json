@@ -1,6 +1,9 @@
 {
   "name": "@convidera-team/stylelint-config-convidera",
   "version": "3.0.0",
+  "bugs": {
+    "url": "https://github.com/convidera/frontend-kit/issues"
+  },
   "description": "Stylelint config used in Convidera",
   "main": "index.js",
   "files": [
